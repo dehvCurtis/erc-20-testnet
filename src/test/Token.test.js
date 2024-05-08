@@ -1,4 +1,4 @@
-// SPDX-License-Identifier: MIT
+// SPDX-License-Identifier: MIT 
 const { BN } = require('@openzeppelin/test-helpers');
 const { expect } = require('chai');
 const Token = artifacts.require('Token');
@@ -27,3 +27,4 @@ contract('Token', (accounts) => {
         expect(await token.balanceOf(creator)).to.be.bignumber.equal(TOTAL_SUPPLY);
     });
 })
+
